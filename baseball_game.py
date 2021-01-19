@@ -297,7 +297,7 @@ def main():
                 break
             elif user_input == random_number:
                 strikes, balls = get_strikes_or_ball(user_input, random_number)
-                print(f'Strikes : {strikes}, Balls : {balls}')
+                print(f'Strikes : {strikes} , Balls : {balls}')
                 break
             elif is_validated_number(user_input) == False:
                 print('Wrong Input, Input again')

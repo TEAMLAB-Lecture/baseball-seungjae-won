@@ -292,12 +292,12 @@ def main():
         while True:
             user_input = input('Input guess number : ')
 
-            if user_input == random_number:
+            if user_input == '0':
+                stop_check = True
+                break
+            elif user_input == random_number:
                 strikes, balls = get_strikes_or_ball(user_input, random_number)
                 print(f'Strikes : {strikes}, Balls : {balls}')
-                break
-            elif user_input == '0':
-                stop_check = True
                 break
             elif is_validated_number(user_input) == False:
                 print('Wrong Input, Input again')
@@ -311,10 +311,7 @@ def main():
 
         while True:
             user_input = input('You win, one more(Y/N)?')
-            if user_input == '0':
-                stop_check = True
-                break
-            
+
             if is_yes(user_input):
                 stop_check = False
                 break

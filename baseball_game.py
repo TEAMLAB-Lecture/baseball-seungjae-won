@@ -68,7 +68,7 @@ def is_between_100_and_999(user_input_number):
     if check_number >= 100 and check_number < 1000:
         result = True
     else:
-        reuslt = False
+        result = False
 
     # ==================================
     return result

@@ -200,7 +200,7 @@ def get_strikes_or_ball(user_input_number, random_number):
     
     for i, value in enumerate(random_number):
         if value in user_input_number:
-            if random_number in user_input_number:
+            if value == user_input_number[i]:
                 result[0]+=1
             else:
                 result[1]+=1

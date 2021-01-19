@@ -311,7 +311,10 @@ def main():
 
         while True:
             user_input = input('You win, one more(Y/N)?')
-
+            if user_input == '0':
+                stop_check = True
+                break
+            
             if is_no(user_input):
                 stop_check = True
                 break

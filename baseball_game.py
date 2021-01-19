@@ -281,9 +281,9 @@ def is_no(one_more_input):
 
 
 def main():
+    print("Play Baseball")
     while True:
         stop_check = False
-        print("Play Baseball")
         random_number = str(get_not_duplicated_three_digit_number())
         print("Random Number is : ", random_number)
         
@@ -332,3 +332,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

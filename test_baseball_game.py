@@ -173,6 +173,7 @@ class TestBaseballGame(unittest.TestCase):
                             if self.is_duplicated_number(input_list[i]):
                                 self.assertTrue(
                                     "WRONG INPUT" in console[i + 2].upper())
+
                             else:
                                 strikes, ball = self.get_strikes_or_ball(
                                     input_list[i], target_number)
@@ -231,3 +232,5 @@ class TestBaseballGame(unittest.TestCase):
                     ball += 1
         result = [strikes, ball]
         return result
+
+unittest.main()

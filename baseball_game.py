@@ -131,10 +131,10 @@ def is_validated_number(user_input_number):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
-    if is_duplicated_number(user_input_number)==False and is_digit(user_input_number)==True and is_between_100_and_999(user_input_number)==True:
-        result = True
-    else:
-        result = False
+    if is_digit(user_input_number)==True: 
+        if is_between_100_and_999(user_input_number)==True:
+            if is_duplicated_number(user_input_number)==False:
+                return True
     # ==================================
     return result
 

@@ -315,6 +315,8 @@ def main():
             if is_no(user_input):
                 stop_check = True
                 break
+            elif is_yes(user_input):
+                break
             else:
                 print('Wrong Input, Input again')
                 continue
